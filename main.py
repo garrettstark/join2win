@@ -43,8 +43,11 @@ st.markdown(f"""###### <a href="mailto:info@join2win.org">Email Us to Learn More
 hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
+            [data-testid="stToolbar"] {visibility: hidden !important;}
+            footer {visibility: hidden !important;}
             </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+
+
 
