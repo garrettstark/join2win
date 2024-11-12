@@ -40,4 +40,11 @@ if custom_integrations == False:
 st.markdown(f"""###### <a href="mailto:info@join2win.org">Email Us to Learn More</a>     <a href="http://www.facebook.com/join2winapp/">Find us on Facebook</a> 
 """, unsafe_allow_html=True)
 
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
